@@ -48,6 +48,7 @@ class BarangController extends Controller
      */
     public function edit(Barang $barang)
     {
+        // return $barang;
         
         return view('barang.edit', compact('barang'));
     }
