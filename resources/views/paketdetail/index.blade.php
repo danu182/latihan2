@@ -16,15 +16,21 @@
                                         </span>
                                         <span class="text">Add paket</span>
                                     </a>
+                            <a href="{{ route('paket.index') }}" class="btn btn-info btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-backspace"></i>
+                                        </span>
+                                        <span class="text">Kembali</span>
+                                    </a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="crudTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>id</th>
+                                            {{-- <th>id</th> --}}
                                             <th>paket nama</th>
-                                            <th>barang_id</th>
+                                            {{-- <th>barang_id</th> --}}
                                             <th>barang</th>
                                             <th>aksi</th>
                                             
@@ -33,9 +39,9 @@
                                     
                                         @forelse ($data as $item)
                                         <tr> 
-                                            <td>{{ $item->id }}</td>       
+                                            {{-- <td>{{ $item->id }}</td>        --}}
                                             <td>{{ $item->paket->name }}</td>      
-                                            <td>{{ $item->barang_id }}</td>      
+                                            {{-- <td>{{ $item->barang_id }}</td>       --}}
                                             <td>{{ $item->barang->name }}</td>      
                                             <td>
                                                 {{-- <a href="{{ route('paket.detail.index',$item->id) }}" class="btn btn-info" >detail</a>     --}}

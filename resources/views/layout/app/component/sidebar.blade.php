@@ -37,7 +37,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="{{ route('barang.index') }}">Baranf</a>
+                        <a class="collapse-item" href="{{ route('barang.index') }}">Barang</a>
+                        <a class="collapse-item" href="{{ route('paket.index') }}">Paket</a>
                             {{-- <a class="collapse-item" href="{{ route('subcategory.index') }}">sub category</a>
                             <a class="collapse-item" href="{{ route('satuan.index') }}">satuan</a>
                             <a class="collapse-item" href="{{ route('product.index') }}">product</a>

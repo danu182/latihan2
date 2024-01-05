@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PakatDetailRequest;
 use App\Models\Barang;
 use App\Models\Paket;
 use App\Models\Paketdetail;
@@ -44,8 +45,9 @@ class PaketdetailController extends Controller
      */
     public function store(Request $request, Paket $paket)
     {
+
         $data=$request->all();
-        return $data;
+        // return $data;
 
         foreach ($data['barang_id'] as  $datas)
         {

@@ -22,7 +22,7 @@ class PakatDetailRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'paket_id'=>'required',
+            // 'paket_id'=>'required|unique:table,column,except,id',
         ];
     }
 }

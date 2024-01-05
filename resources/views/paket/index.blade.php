@@ -68,7 +68,7 @@
                                                         Hapus
                                                     </button>
                                                         
-                                                </form>';
+                                                </form>
                                             </td> 
                                         </tr>
                                         @empty

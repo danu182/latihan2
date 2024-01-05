@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('index.index');
+});
 
 Route::resource('barang', BarangController::class);
 Route::resource('paket', PaketController::class);
