@@ -12,7 +12,8 @@ class PelangganController extends Controller
      */
     public function index()
     {
-        //
+        $pelanggan=Pelanggan::all();
+        return view('pelanggan.index', compact('pelanggan'));
     }
 
     /**
@@ -20,7 +21,7 @@ class PelangganController extends Controller
      */
     public function create()
     {
-        //
+        return view('pelanggan.create');
     }
 
     /**
@@ -28,7 +29,9 @@ class PelangganController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data=$request->all();
+        Pelanggan::create($data);
+        return redirect()->route('pelanggan.index');
     }
 
     /**
@@ -44,7 +47,7 @@ class PelangganController extends Controller
      */
     public function edit(Pelanggan $pelanggan)
     {
-        //
+        return view('pelanggan.edit', compact('pelanggan'));
     }
 
     /**
@@ -52,7 +55,9 @@ class PelangganController extends Controller
      */
     public function update(Request $request, Pelanggan $pelanggan)
     {
-        //
+        $data=$request->all();
+        $pelanggan->update($data);
+        return redirect()->route('pelanggan.index');
     }
 
     /**
@@ -60,6 +65,7 @@ class PelangganController extends Controller
      */
     public function destroy(Pelanggan $pelanggan)
     {
-        //
+        $pelanggan->delete();
+        return redirect()->route('pelanggan.index');
     }
 }

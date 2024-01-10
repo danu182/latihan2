@@ -3,6 +3,7 @@
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\PaketController;
 use App\Http\Controllers\PaketdetailController;
+use App\Http\Controllers\PelangganController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,4 @@ Route::resource('barang', BarangController::class);
 Route::resource('paket', PaketController::class);
 Route::resource('paket.detail', PaketdetailController::class);
 Route::resource('detail', PaketdetailController::class);
+Route::resource('pelanggan', PelangganController::class);
